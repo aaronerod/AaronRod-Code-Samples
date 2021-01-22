@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Rod.Utilities.MusicController
 {
-    [CreateAssetMenu(fileName = "Music Connector", menuName = "Rod/Music Controller/Track")]
+    [CreateAssetMenu(fileName = "Track", menuName = "Rod/Music Controller/Track")]
     public class MusicTrackData : ScriptableObject
     {
         [SerializeField]
