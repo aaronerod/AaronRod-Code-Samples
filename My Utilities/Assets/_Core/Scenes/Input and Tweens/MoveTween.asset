@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60b3104f08a1e49d5994235636c4ea53, type: 3}
+  m_Name: MoveTween
+  m_EditorClassIdentifier: 
+  tweenType: 2
+  useRectTransform: 0
+  useTransformValuesAsInitial: 0
+  useTransformValuesAsFinal: 0
+  initialValue: {x: -1, y: 0, z: 1}
+  endValue: {x: 1, y: 0, z: 1}
+  tweenDuration: 1
+  tweenDuration2: 0
+  tweenDurationReverse: 0.1
+  loops: 2
+  delay: 0
+  delay2: 0
+  delayReverse: 0
+  loopType: 1
+  ease: 4
+  easeReverse: 0
+  easeAmplitude: -1
+  easePeriod: -1
