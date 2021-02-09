@@ -148,6 +148,19 @@ namespace Rod.Utilities.Timers
                 TimerReduced?.Invoke(id);
             }
         }
+
+        /// <summary>
+        /// Obtener un timer con su identificador
+        /// </summary>
+        /// <param name="id">Identificador del timer</param>
+        /// <returns></returns>
+        public Timer GetTimer(string id)
+        {
+            Timer timer = null;
+            if (activeTimers.ContainsKey(id))
+                timer = activeTimers[id];
+            return timer;
+        }
     }
 
 
