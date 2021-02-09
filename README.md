@@ -20,7 +20,9 @@ poder trabajar con ellos desde cualquier lugar. Cada timer notifica cuando ha si
 tenga distintos comportamientos al perder y recibir el foco. Adeás cuenta con un utility llamado UITweener que hace uso de DoTween para poder agregarle animaciones
 de entrada y salida con mucha facilidad sin necesidad de agregarlas desde código o usando el Animator haciendo que tenga un mejor rendimiento.
 
--**Main Execution**: Este es un sistema que permite controlar el orden que se van a inicializar los controladores que implementen alguna de las interfaces necesarias.
+-**Statistics Controller** Sistema que permite reportar progreso de estadísticas de juego y notifica cuando los valores han sido modificados.. Es muy útil para hacer sistemas de achievements, misiones, etc. 
+
+-**Main Execution**: Este es un sistema que permite controlar el orden en que se van a inicializar los controladores que implementen alguna de las interfaces necesarias.
 Cuenta con tres fases PreInitialize, Load e Initialize. Se ejecutan en ese orden específico y permiten que componentes carguen incluso cuando tengan que hacer algún
 proceso largo ya que lo hace a través de corutinas que esperan a que los procesos del componente anterior hayan terminado.
 
@@ -40,5 +42,7 @@ Hay tres escenas de muestra donde se puede probar el funcionamiento de algunos d
 -**UI Controller Example**: Muestra el funcionamiento del sistema UIController. Permite abrir una pantalla con un boton y depués abrir una segunda pantalla provocando
 que la primera se oculte. Hace uso de UITweener para hacer transiciones smooth entre una otra pantalla.
 
-![](Input.gif) ![](Timer.gif) ![](UI%20Controller.gif)
+-**Statistics Example**: Muestra el funcionamiento del sistema StatisticsController. Permite escribir en un input field el Id de una estadística para reportar un nuevo valor y peremite escribir el Id de una estadística para escuchar a su balor. En un texto muestra el valor de la estadística que se está escuchando y lo actualiza en el momento que recibe cambios.
+
+![](Input.gif) ![](Timer.gif) ![](UI%20Controller.gif) ![](Statistics.gif)
 
